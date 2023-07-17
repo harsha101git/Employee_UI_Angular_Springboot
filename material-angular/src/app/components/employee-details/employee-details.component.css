@@ -1,0 +1,15 @@
+.mat-elevation-z8{
+width: 40%;
+/* background-color: lavenderblush; */
+}
+
+.example-card{
+    background-size: cover;
+    height: 94.5%;
+    background-attachment: fixed;
+    background-image: url("https://betanews.com/wp-content/uploads/2015/09/identity-verification-600x400.jpg"); 
+}
+
+.mat-elevation-z8{
+    float: right;
+}

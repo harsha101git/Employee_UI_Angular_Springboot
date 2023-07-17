@@ -1,0 +1,71 @@
+<mat-card class="example-card">
+<mat-card-title class="example-title" style="color:rgba(255,0,0,0.5);">
+  New employees
+</mat-card-title>
+
+<form [formGroup] = "userGroup" novalidate (ngSubmit)="onSubmit()" class="mat-elevation-z8">
+
+
+  <div>
+    <p>
+  <mat-form-field appearance="standard">
+      <mat-label>Employee Name</mat-label>
+    <input type="text" matInput placeholder="Name" formControlName="name">
+
+    
+    <!-- <mat-hint>Name</mat-hint> -->
+  </mat-form-field>
+</p>
+</div>
+
+<div>
+  <p>
+  <mat-form-field appearance="standard">
+      <mat-label>Employee Place</mat-label>
+    <input type="text" matInput placeholder="Place" formControlName="place">
+    <!-- <mat-hint>Place</mat-hint> -->
+</mat-form-field>
+</p>
+</div>
+
+<div>
+  <p>
+<mat-form-field appearance="standard">
+    <mat-label>Employee Designation</mat-label>
+  <input type="text" matInput placeholder="Designation" formControlName="designation">
+  <!-- <mat-hint>Designation</mat-hint> -->
+</mat-form-field>
+</p>
+</div>
+
+<div>
+  <p>
+<mat-form-field appearance="standard">
+    <mat-label>Employee email</mat-label>
+  <input type="text" matInput placeholder="email" formControlName="email">
+  <!-- <mat-hint>Designation</mat-hint> -->
+</mat-form-field>
+</p>
+</div>
+
+<div>
+  <p>
+<mat-form-field appearance="standard">
+    <mat-label>Employee phone-number</mat-label>
+  <input type="text" matInput placeholder="phone" formControlName="phone">
+  <!-- <mat-hint>Designation</mat-hint> -->
+</mat-form-field>
+</p>
+</div>
+
+<div>
+  <p>
+<button class="example-button-row" type="submit" mat-raised-button color="primary" [disabled]="!userGroup.valid">Submit</button>
+</p>
+</div>
+
+
+</form>
+
+
+</mat-card>

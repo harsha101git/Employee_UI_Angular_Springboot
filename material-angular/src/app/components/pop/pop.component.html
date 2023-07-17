@@ -1,0 +1,11 @@
+
+<h1 mat-dialog-title> Delete the list</h1>
+<div mat-dialog-content>
+  <p> are you sure want to delete?</p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onNoClick(user.id)" cdkFocusInitial>yes</button>
+   <button mat-raised-button [mat-dialog-close]="data" (click)="cancel()" >Cancel</button>
+</div>
+

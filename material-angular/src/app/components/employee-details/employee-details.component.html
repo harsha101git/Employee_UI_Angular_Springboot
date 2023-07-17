@@ -1,0 +1,65 @@
+<mat-card class="example-card">
+
+<form class="mat-elevation-z8">
+  
+
+
+  <div>
+  <mat-form-field appearance="legacy" class="example-full-width">
+      <mat-label style="color:darkolivegreen">Employee ID</mat-label><p>
+    <input matInput placeholder="Id" disabled></p>
+    <b>{{user.id}}</b>
+  </mat-form-field>
+</div>
+
+
+
+<div>
+  <mat-form-field appearance="legacy" class="example-full-width">
+      <mat-label style="color:darkolivegreen">Employee Name</mat-label><p>
+    <input matInput placeholder="Name" disabled></p>
+    <b>{{user.name}}</b>
+   </mat-form-field>
+  </div>
+
+
+
+<div>
+   <mat-form-field appearance="legacy" class="example-full-width">
+      <mat-label style="color:darkolivegreen">Employee Place</mat-label><p>
+    <input matInput placeholder="Place" disabled></p>
+    <b>{{user.place}}</b>
+   </mat-form-field>
+</div>
+
+<div>
+   <mat-form-field appearance="legacy" class="example-full-width">
+      <mat-label style="color:darkolivegreen">Employee Designation</mat-label><p>
+    <input matInput placeholder="Designation" disabled></p>
+    <b>{{user.designation}}</b>
+   </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="legacy" class="example-full-width">
+       <mat-label style="color:darkolivegreen">Employee Email</mat-label><p>
+     <input matInput placeholder="email" disabled></p>
+     <b>{{user.email}}</b>
+    </mat-form-field>
+   </div>
+
+   <div>
+    <mat-form-field appearance="legacy" class="example-full-width">
+       <mat-label style="color:darkolivegreen">Employee phone-number</mat-label><p>
+     <input matInput placeholder="phone" disabled></p>
+     <b>{{user.phone}}</b>
+    </mat-form-field>
+   </div>
+<button mat-raised-button color="accent" (click)="list()">Back to list</button>
+
+
+
+
+</form>
+   
+</mat-card>

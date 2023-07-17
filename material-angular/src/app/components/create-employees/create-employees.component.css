@@ -1,0 +1,18 @@
+.mat-elevation-z8{
+     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YK94T5ZagfVelWYKpB-tnCFd641p0FU0izWBjKOoy6UO_ifP&s");
+    width: 50%;
+    align-content: center;
+    background-color: aqua;
+}
+
+.example-button-row{
+    float: center;
+}
+
+.example-card{
+
+    background-image: url("https://miro.medium.com/max/3840/1*zhRUMe6Y5oKBpzULfUqzww.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 94.5%;
+}

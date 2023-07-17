@@ -1,0 +1,47 @@
+.mat-elevation-z8 {
+ text-align: center ;
+ background-image: url("https://i.pinimg.com/originals/f7/9c/52/f79c5203d3baf7b79b599fc386b35266.jpg");
+ background-size: cover;
+ width: 100%;
+ height: 30%;
+ background-position-y: -30vh;
+
+   /* background-color: transparent; */
+}
+
+.b{
+  float: right;
+  width: 10%;
+  height: 40px;
+  width: 156px;
+  text-align: center;
+  border-radius: 8px;
+  border: solid 1px white;
+  color: white;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.ng-container{
+  text-align: center;
+}
+
+.mat-header-cell{
+  text-align: center;
+}
+
+.v{
+  /* background-image: url("https://theotherdesignstudio.com/wp-content/uploads/2017/10/Sensei-dairy-cover-design-1170x837.jpg "); */
+  background-image: url("https://files.gandi.ws/76/c3/76c37848-241e-4e9b-844f-7ccbcb1062f8.jpg");
+  background-size: cover;
+  height: 94.5%;
+}
+
+.example-button{
+  color: #0a3ac2;
+    background-color: white;
+    font-weight: 600;
+}

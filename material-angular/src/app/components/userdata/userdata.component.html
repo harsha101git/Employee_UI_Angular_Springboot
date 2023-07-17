@@ -1,0 +1,87 @@
+
+<mat-card class="v">
+    <mat-card-content>
+        <mat-card-title style= "color: red">EMPLOYEE DETAILS
+        <!-- <button mat-stroked-button class="b" (click)="add()">Registered Details</button>  -->
+        <button mat-stroked-button class="b" (click)="add()">Add</button>
+    </mat-card-title>
+    </mat-card-content> 
+
+      <mat-table [dataSource]="dataSource"  class="mat-elevation-z8">
+       
+  
+          <ng-container matColumnDef="id">
+             <mat-header-cell *matHeaderCellDef><b>ID</b></mat-header-cell>
+             <mat-cell *matCellDef="let user">{{user.id}}</mat-cell> 
+          </ng-container>  
+          <div>
+          <ng-container matColumnDef="name">
+              <mat-header-cell *matHeaderCellDef><b>Name</b></mat-header-cell>
+              <mat-cell *matCellDef="let user">{{user.name}}</mat-cell> 
+           </ng-container>  
+        </div>
+        
+           <ng-container matColumnDef="email">
+            <div>
+            <mat-header-cell *matHeaderCellDef><b>Email</b></mat-header-cell>
+         <mat-cell *matCellDef="let user">{{user.email}}</mat-cell>    
+        </div>
+        </ng-container>
+    
+        <ng-container matColumnDef="phone">
+         <mat-header-cell *matHeaderCellDef><b>Phone-number</b></mat-header-cell>
+      <mat-cell *matCellDef="let user">{{user.phone}}</mat-cell>    
+     </ng-container>
+
+           <ng-container matColumnDef="place">
+              <mat-header-cell *matHeaderCellDef><b>Place</b></mat-header-cell>
+              <mat-cell *matCellDef="let user">{{user.place}}</mat-cell> 
+           </ng-container>  
+
+
+           <ng-container matColumnDef="designation">
+              <mat-header-cell *matHeaderCellDef><b>Designation</b></mat-header-cell>
+              <mat-cell *matCellDef="let user">{{user.designation}}</mat-cell> 
+           </ng-container>  
+
+           
+    
+
+           <ng-container matColumnDef="edit">
+               <mat-header-cell *matHeaderCellDef><b> Edit </b></mat-header-cell>
+               <mat-cell *matCellDef="let row" >   
+                   <button class="example-button" mat-raised-button color="primary" (click)="update(row.id)">Edit</button> 
+               </mat-cell>
+           </ng-container>
+
+
+           <ng-container matColumnDef="delete">
+            <mat-header-cell *matHeaderCellDef> <b> Delete </b> </mat-header-cell>
+            <mat-cell *matCellDef="let row" >   
+                <button class="example-button" mat-raised-button color="primary" (click)="delete(row)">Delete</button> 
+            </mat-cell>
+        </ng-container>
+
+     <ng-container matColumnDef="details">
+      <mat-header-cell *matHeaderCellDef> <b>Details</b> </mat-header-cell>
+      <mat-cell *matCellDef="let user" >   
+          <button class="example-button" mat-raised-button color="primary" (click)="details(user.id)">Details</button> 
+      </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="send">
+    <mat-header-cell *matHeaderCellDef> <b>Send</b> </mat-header-cell>
+    <mat-cell *matCellDef="let user" >   
+        <button class="example-button" mat-raised-button color="primary" (click)="send(user)">Send</button> 
+    </mat-cell>
+</ng-container>
+
+        <mat-header-row *matHeaderRowDef="DisplayColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: DisplayColumns"></mat-row>
+
+
+    
+
+
+      </mat-table>
+    </mat-card>
